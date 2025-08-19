@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
-import 'features/splash/presntation/view/splash_view.dart';
+import 'constatns.dart';
+import 'features/splash/presntation/views/splash_view.dart';
+
 
 void main() {
   runApp(const footballer());
@@ -12,6 +14,8 @@ class footballer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(home: SplashView());
+    return GetMaterialApp(theme:ThemeData().copyWith(
+      scaffoldBackgroundColor: kPpccolor,
+    ),home: SplashView());
   }
 }
