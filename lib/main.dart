@@ -4,7 +4,6 @@ import 'package:get/get_navigation/get_navigation.dart';
 import 'constatns.dart';
 import 'features/splash/presntation/views/splash_view.dart';
 
-
 void main() {
   runApp(const footballer());
 }
@@ -14,8 +13,10 @@ class footballer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(theme:ThemeData().copyWith(
-      scaffoldBackgroundColor: kPpccolor,
-    ),home: SplashView());
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData().copyWith(scaffoldBackgroundColor: kPpccolor),
+      home: SplashView(),
+    );
   }
 }
