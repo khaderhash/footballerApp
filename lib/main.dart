@@ -15,7 +15,7 @@ class footballer extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData().copyWith(scaffoldBackgroundColor: kPpccolor),
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPpccolor),
       home: SplashView(),
     );
   }
