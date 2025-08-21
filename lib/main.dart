@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'constatns.dart';
 import 'features/splash/presntation/views/splash_view.dart';
@@ -15,7 +16,10 @@ class footballer extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPpccolor),
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: kPpccolor,
+        textTheme: GoogleFonts.montagaTextTheme(ThemeData.dark().textTheme),
+      ),
       home: SplashView(),
     );
   }
